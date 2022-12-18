@@ -12,3 +12,18 @@ Create an election for your school or university in seconds. Your voters can vot
 - Create and manage ballots easily
 - Create the electoral roll and authenticate eligible voters safely
 - Start the election and view turnout in real time
+
+## Prerequisite
+- Xampp: web server environment with MySql
+- PhpMyAdmin: web-based database management tool
+### Installation :
+Modify or import UOWD.sql file from phpmyadmin.
+
+## How it works
+- Voting Login
+- Admin Login
+- Server - The place that holds the user info and credentials
+- Configure your web server to recognize and process PHP files.
+- Place the file in the document root directory of the web server.
+- Access the file in a web browser.
+- `http://localhost:8000`
