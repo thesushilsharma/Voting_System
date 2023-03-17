@@ -27,3 +27,12 @@ Modify or import UOWD.sql file from phpmyadmin.
 - Place the file in the document root directory of the web server.
 - Access the file in a web browser.
 - `http://localhost:8000`
+
+## Known Issues
+- None
+
+## Contributing
+To contribute to this project, please submit any issues or pull requests on the GitHub repository.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
