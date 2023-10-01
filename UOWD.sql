@@ -1,3 +1,6 @@
+CREATE DATABASE uowd;
+USE uowd;
+
 CREATE TABLE IF NOT EXISTS `candidate` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `cid` varchar(20) NOT NULL,
@@ -45,10 +48,10 @@ CREATE TABLE IF NOT EXISTS `results` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
-INSERT INTO `results` (`id`, `sid`, `slateid`,`gmid`,`sportsid`, `vid`, `date`) VALUES
-(431605, 1, 1, '2020-03-09'),
-(431605, 1, 2, '2020-03-09'),
-(431605, 1, 3, '2020-03-09');
+-- INSERT INTO `results` (`id`, `sid`, `slateid`,`gmid`,`sportsid`, `vid`, `date`) VALUES
+-- (431605, 1, 1, '2025-03-09'),
+-- (431605, 1, 2, '2025-03-09'),
+-- (431605, 1, 3, '2025-03-09');
 
 
 CREATE TABLE IF NOT EXISTS `voting` (
@@ -60,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `voting` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 INSERT INTO `voting` ( `date`, `stime`, `etime`) VALUES
-('2020-03-13', '16:00:00', '23:00:00');
+('2023-03-13', '16:00:00', '23:00:00');
 
 CREATE TABLE IF NOT EXISTS `sushil` (
   `id` int NOT NULL AUTO_INCREMENT,

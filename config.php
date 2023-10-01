@@ -1,14 +1,17 @@
 <?php
-$host = "127.0.0.1"; /* Host name */
-$user = "mariadb"; /* User */
-$password = "mariadb"; /* Password */
-$dbname = "mariadb"; /* Database name */
+session_start();
 
-$con = new mysqli($host, $user, $password, $dbname);
-// Check connection
-if (!$con) {
- die("Connection failed: " . mysqli_connect_error());
+// Database connection settings
+DEFINE ('DB_USER', 'root');
+DEFINE ('DB_PASSWORD', '');
+DEFINE ('DB_HOST', 'localhost');
+DEFINE ('DB_NAME', 'uowd');
+
+// Create a database connection
+$con = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+if ($con->connect_error) {
+    die("Connection failed: " . $con->connect_error);
 }
 
-$queries = file_get_contents('UOWD.sql'); 
-mysqli_multi_query($con, $queries);
+mysqli_set_charset($con, 'utf8');

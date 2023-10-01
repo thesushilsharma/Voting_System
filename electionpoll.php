@@ -1,5 +1,5 @@
 <?php
-include "config.php";
+include 'config.php';
 session_start();
 $sid      = $_REQUEST['id'];
 
@@ -146,7 +146,7 @@ $result03 = mysqli_query($con,$sr00);
             <center>
                 <br>
                 <br>
-                <h2 style="">Election Results</h2>
+                <h2>Election Results</h2>
                 <br>
                 <br>
                 <div class="divTable darkTable">
@@ -160,21 +160,21 @@ $result03 = mysqli_query($con,$sr00);
                         <?php
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<div class='divTableRow'>
-                                                        <div class='divTableCell'>" . $row{'cname'} . "</div> <div class='divTableCell'>" . $row{'ct'} . "</div>
+                                                        <div class='divTableCell'>" . $row['cname'] . "</div> <div class='divTableCell'>" . $row['ct'] . "</div>
                                                             </div>";
                         }
                         ?>
                         <?php
                         while ($row = mysqli_fetch_array($result02)) {
                             echo "<div class='divTableRow'>
-                                                        <div class='divTableCell'>" . $row{'cname'} . "</div> <div class='divTableCell'>" . $row{'ct'} . "</div>
+                                                        <div class='divTableCell'>" . $row['cname'] . "</div> <div class='divTableCell'>" . $row['ct'] . "</div>
                                                             </div>";
                         }
                         ?>
                         <?php
                         while ($row = mysqli_fetch_array($result03)) {
                             echo "<div class='divTableRow'>
-                                                        <div class='divTableCell'>" . $row{'cname'} . "</div> <div class='divTableCell'>" . $row{'ct'} . "</div>
+                                                        <div class='divTableCell'>" . $row['cname'] . "</div> <div class='divTableCell'>" . $row['ct'] . "</div>
                                                             </div>";
                         }
                         ?>

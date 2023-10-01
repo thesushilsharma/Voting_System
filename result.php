@@ -1,5 +1,5 @@
 <?php
-include "config.php";
+include 'config.php';
 
 $result1= mysqli_query($con,"select * from voting ");
 
@@ -173,7 +173,7 @@ $result1= mysqli_query($con,"select * from voting ");
 while($row=mysqli_fetch_array($result1))
 {
 echo "    <div class='divTableRow'>
-<div class='divTableCell' style='color: black;'>".$row{'date'}."</div> <div class='divTableCell' ><a href='electionpoll.php?id=".$row{'id'}."' style='color: Red;'>VIEW!</a></div>
+<div class='divTableCell' style='color: black;'>".$row['date']."</div> <div class='divTableCell' ><a href='electionpoll.php?id=".$row['id']."' style='color: Red;'>VIEW!</a></div>
 </div>";
 }
 ?>

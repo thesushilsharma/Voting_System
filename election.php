@@ -1,6 +1,6 @@
 <?php
-include "config.php";
-session_start();
+include 'config.php';
+
 $result4 = mysqli_query($con, "select * from candidate where position='Sports'");
 $result5 = mysqli_query($con, "select * from candidate where position='slate'");
 $result6 = mysqli_query($con, "select * from candidate where position='GM'");
@@ -12,7 +12,7 @@ $result2   = mysqli_query($con, "select * from voter where studentid='$studentid
 $count2 = 0;
 $count1 = 0;
 while ($row = mysqli_fetch_array($result2)) {
-    $vid = $row{"vid"};
+    $vid = $row["vid"];
 }
 
 echo $studentid = $_SESSION['studentid'];
@@ -233,7 +233,7 @@ color:black;
                 <h2>Online Voting</h2></center>
         </div>
 <div style="float:right">
-<a href="index.php" class="student_logout">Logout</a>
+<a href="logout.php" class="student_logout">Logout</a>
 </div>
      
         <div >
@@ -261,9 +261,9 @@ color:black;
 while ($row = mysqli_fetch_array($result4)) {
     echo '<div class="divTableRow">
                               
-<div class="divTableCell">' . $row{"position"} . '</div>
-<div class="divTableCell">' . $row{"cname"} . '</div>
-<div class="divTableCell"><input type="radio" name="r1" value="' . $row{"id"} . '">' . '</div>
+<div class="divTableCell">' . $row["position"] . '</div>
+<div class="divTableCell">' . $row["cname"] . '</div>
+<div class="divTableCell"><input type="radio" name="r1" value="' . $row["id"] . '">' . '</div>
 
                             </div>';
 }
@@ -289,9 +289,9 @@ while ($row = mysqli_fetch_array($result4)) {
 while ($row = mysqli_fetch_array($result5)) {
     echo '<div class="divTableRow">
                               
-<div class="divTableCell">' . $row{"position"} . '</div>
-<div class="divTableCell">' . $row{"cname"} . '</div>
-<div class="divTableCell"><input type="radio" name="r2" value="' . $row{"id"} . '">' . '</div>
+<div class="divTableCell">' . $row["position"] . '</div>
+<div class="divTableCell">' . $row["cname"] . '</div>
+<div class="divTableCell"><input type="radio" name="r2" value="' . $row["id"] . '">' . '</div>
 
                             </div>';
 }
@@ -317,9 +317,9 @@ while ($row = mysqli_fetch_array($result5)) {
 while ($row = mysqli_fetch_array($result6)) {
     echo '<div class="divTableRow">
                               
-<div class="divTableCell">' . $row{"position"} . '</div>
-<div class="divTableCell">' . $row{"cname"} . '</div>
-<div class="divTableCell"><input type="checkbox" name="r3[]" value="' . $row{"id"} . '">' . '</div>
+<div class="divTableCell">' . $row["position"] . '</div>
+<div class="divTableCell">' . $row["cname"] . '</div>
+<div class="divTableCell"><input type="checkbox" name="r3[]" value="' . $row["id"] . '">' . '</div>
 
                             </div>';
 }
