@@ -2,7 +2,7 @@
 
 Voting technology that looks to the future, not the past.
 
-Building an election is easy you're always in control with Voting system. It's easy to build and customize an online election system.
+Building an election is easy you're always in control with a Voting system. It's easy to build and customize an online election system.
 
 Create an election for your school or university in seconds. Your voters can vote from any location on any device.
 
@@ -17,7 +17,7 @@ Create an election for your school or university in seconds. Your voters can vot
 - Xampp: web server environment with MySql
 - PhpMyAdmin: web-based database management tool
 ### Installation :
-Modify or import UOWD.sql file from phpmyadmin.
+Modify or import the UOWD.sql file from phpmyadmin.
 
 ## How it works
 - Voting Login
@@ -35,4 +35,4 @@ Modify or import UOWD.sql file from phpmyadmin.
 To contribute to this project, please submit any issues or pull requests on the GitHub repository.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
