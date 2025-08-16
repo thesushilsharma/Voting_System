@@ -45,7 +45,7 @@ This project has been modernized using **Laravel**, the premier PHP framework fo
 1. **Clone the repository**
 ```bash
 git clone https://github.com/thesushilsharma/Voting_System.git
-cd voting-system
+cd Voting_System
 ```
 
 2. **Install PHP dependencies**
