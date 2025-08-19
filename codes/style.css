@@ -1,0 +1,98 @@
+body{
+    
+    height: 800px;
+    background-color: #020B13;
+    color: #c0c2c4;
+}
+fieldset {
+  position: relative;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border: 2px solid blue;
+  height: 650px;
+}
+#page legend {
+  border: 2px dotted red;
+  font-size: 2em;
+  background: white;
+  color:black
+}
+.center {
+  text-align: center;
+  border: 3px solid white;
+}
+
+/* Container */
+.container {
+  width: 40%;
+  margin: 4% auto;
+}
+
+/* Login */
+#div_login {
+  border: 2px solid gray;
+  border-radius: 3px;
+  width: 470px;
+  height: auto;
+  box-shadow: 0px 2px 2px 0px gray;
+  margin: auto;
+  padding: 10px;
+}
+
+#div_login h2 {
+  margin-top: 0px;
+  font-weight: normal;
+  padding: 10px;
+  background-color: cornflowerblue;
+  color: white;
+  font-family: sans-serif;
+}
+
+#div_login div {
+  clear: both;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+#div_login .textbox {
+  width: 96%;
+  padding: 7px;
+}
+
+.student_login {
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.student_login:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+.student_login:active {
+	position:relative;
+	top:1px;
+}
+
+/* Media */
+@media screen and (max-width: 800px) {
+  .container {
+    width: 75%;
+  }
+  #div_login {
+    width: 70%;
+  }
+}
